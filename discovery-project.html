@@ -35,213 +35,37 @@
     </header>
 
     <main class="discovery-main">
-      <section class="hero-section discovery-hero" id="top">
-        <div class="container discovery-hero-grid">
-          <div class="hero-copy discovery-copy">
-            <p class="eyebrow">ECE Discovery Project | Presentation Portfolio</p>
-            <h1>Discovery Project</h1>
-            <p class="hero-text discovery-intro">
-              My Discovery Project focused on integrating a foundry-style SRAM macro into a digital ASIC implementation flow. Through this project, I explored how macro integration affects floorplanning, power connectivity, timing analysis, and signoff, while gaining hands-on experience with real physical design challenges.
-            </p>
-
-            <div class="discovery-meta-row" aria-label="Project metadata">
-              <div class="meta-chip">
-                <span class="meta-label">Course</span>
-                <span>ECE 1100</span>
-              </div>
-              <div class="meta-chip">
-                <span class="meta-label">Semester</span>
-                <span>Spring 2026</span>
-              </div>
-              <div class="meta-chip">
-                <span class="meta-label">Project Focus</span>
-                <span>ASIC Physical Design / SRAM Macro Integration</span>
-              </div>
-            </div>
-
-            <div class="hero-actions">
-              <a class="button button-primary" href="#idea">Start Presentation Flow</a>
-              <a class="button button-secondary" href="#snapshot">Presentation Snapshot</a>
-            </div>
-          </div>
-
-          <aside class="hero-panel discovery-panel">
-            <div class="panel-block">
-              <p class="panel-label">Talk Track</p>
-              <p class="panel-text">
-                This project walks through integrating an SRAM macro, debugging power and timing issues, and understanding how real physical design differs from ideal flows.
-              </p>
-            </div>
-
-            <div class="panel-block">
-              <p class="panel-label">Quick Jump</p>
-              <nav class="jump-links">
-                <a href="#idea">Idea</a>
-                <a href="#problem">The Problem</a>
-                <a href="#process">The Process</a>
-                <a href="#roadblocks">Successes and Failures</a>
-                <a href="#skills-gained">ECE Skills Gained</a>
-                <a href="#outcome">The Outcome</a>
-                <a href="#final-thoughts">Final Thoughts</a>
-                <a href="#snapshot">Snapshot</a>
-              </nav>
-            </div>
-          </aside>
+      <section class="hero-section" style="text-align:center; padding: 80px 0;">
+        <div class="container">
+          <h1>Discovery Project</h1>
+          <p style="margin-top: 10px; color: #666;">
+            Embedded PDF presentation walkthrough of my Discovery Project.
+          </p>
         </div>
       </section>
 
-      <div class="container discovery-layout">
-        <div class="discovery-content">
-
-          <!-- IDEA -->
-          <section class="content-section" id="idea">
-            <div class="section-shell discovery-shell">
-              <div class="section-heading">
-                <p class="section-tag">Section 1</p>
-                <h2>Discovery Project Idea</h2>
-              </div>
-
-              <div class="discovery-grid discovery-grid-wide">
-                <article class="discovery-card">
-                  <p class="card-kicker">Overview</p>
-                  <p>This project explored how to integrate a foundry SRAM macro into a full RTL-to-GDS flow, focusing on real implementation challenges.</p>
-                </article>
-
-                <article class="discovery-card">
-                  <p class="card-kicker">Initial Idea / Pitch</p>
-                  <p>I wanted to understand what it takes to make a memory macro work in a real implementation flow beyond RTL.</p>
-                </article>
-
-                <article class="discovery-card">
-                  <p class="card-kicker">Why I Chose It</p>
-                  <p>I am interested in physical design, and SRAM integration is a real-world backend challenge.</p>
-                </article>
-
-                <article class="discovery-card">
-                  <p class="card-kicker">What I Hoped To Learn</p>
-                  <p>I aimed to learn macro integration, timing validation, and signoff debugging.</p>
-                </article>
-              </div>
-
-              <!-- IMAGE PLACEHOLDER -->
-            </div>
-          </section>
-
-          <!-- PROBLEM -->
-          <section class="content-section" id="problem">
-            <div class="section-shell discovery-shell">
-              <div class="section-heading">
-                <p class="section-tag">Section 2</p>
-                <h2>The Problem</h2>
-              </div>
-
-              <div class="discovery-grid">
-                <article class="discovery-card discovery-card-emphasis">
-                  <p class="card-kicker">Problem Statement</p>
-                  <p>SRAM macros have fixed layouts, non-standard pins, and complex timing. The challenge was integrating them correctly into the flow.</p>
-                </article>
-
-                <article class="discovery-card">
-                  <p class="card-kicker">Why It Mattered</p>
-                  <p>Incorrect macro integration can break a design even if it looks logically correct.</p>
-                </article>
-              </div>
-
-              <!-- IMAGE PLACEHOLDER -->
-            </div>
-          </section>
-
-          <!-- PROCESS -->
-          <section class="content-section" id="process">
-            <div class="section-shell discovery-shell">
-              <div class="section-heading">
-                <p class="section-tag">Section 3</p>
-                <h2>The Process</h2>
-              </div>
-
-              <div class="discovery-grid">
-                <article class="discovery-card">
-                  <p class="card-kicker">Project Progress</p>
-                  <p>I integrated SRAM into the flow and debugged placement, power, and timing issues.</p>
-                </article>
-
-                <article class="discovery-card">
-                  <p class="card-kicker">Tools / Methods Used</p>
-                  <p>I used Cadence tools with LEF/Liberty files and timing reports.</p>
-                </article>
-              </div>
-
-              <div class="timeline-shell">
-                <div class="timeline-list">
-                  <article class="timeline-step">
-                    <p>I began by adding SRAM views and configuring the flow.</p>
-                  </article>
-                  <article class="timeline-step">
-                    <p>I integrated the macro into floorplanning and routing.</p>
-                  </article>
-                  <article class="timeline-step">
-                    <p>I debugged power and timing issues, including DO path visibility.</p>
-                  </article>
-                  <article class="timeline-step">
-                    <p>I reached a strong understanding of macro integration challenges.</p>
-                  </article>
-                </div>
-              </div>
-
-              <!-- IMAGE PLACEHOLDERS -->
-            </div>
-          </section>
-
-          <!-- SUCCESSES / FAILURES -->
-          <section class="content-section" id="roadblocks">
-            <ul>
-              <li>Integrated SRAM macro successfully</li>
-              <li>Debugged power and timing issues</li>
-              <li>Gained real implementation experience</li>
-            </ul>
-
-            <ul>
-              <li>Power routing initially failed logical checks</li>
-              <li>DO pins only appeared in unconstrained timing</li>
-              <li>RTL latch behavior needed fixing</li>
-            </ul>
-          </section>
-
-          <!-- SKILLS -->
-          <section class="content-section" id="skills-gained">
-            <p>Hard Macro Integration – Learned SRAM integration</p>
-            <p>Static Timing Analysis – Debugged timing paths</p>
-            <p>Signoff Awareness – Physical vs logical correctness</p>
-            <p>RTL Interaction – RTL affects timing</p>
-          </section>
-
-          <!-- OUTCOME -->
-          <section class="content-section" id="outcome">
-            <p>The project gave me a deeper understanding of macro integration and implementation challenges.</p>
-            <p>I now understand how to debug power and timing issues.</p>
-
-            <!-- IMAGE PLACEHOLDER -->
-          </section>
-
-          <!-- FINAL -->
-          <section class="content-section" id="final-thoughts">
-            <p>This project showed the gap between logic and implementation.</p>
-            <p>It strengthened my interest in physical design.</p>
-            <p>I became more interested in timing/debugging.</p>
-            <p>I want to continue in backend design.</p>
-          </section>
-
-          <!-- SNAPSHOT -->
-          <section class="content-section" id="snapshot">
-            <p>I integrated SRAM and debugged implementation issues.</p>
-            <p>Biggest challenge: DO timing</p>
-            <p>Biggest success: fixing integration</p>
-            <p>Top skill: timing analysis</p>
-            <p>Next: larger designs</p>
-          </section>
-
+      <section class="container" style="padding-bottom: 80px;">
+        <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: #fff;">
+          <!-- Replace the file name below with your downloaded presentation PDF -->
+          <iframe
+            src="Computer.pdf"
+            title="Discovery Project Presentation"
+            style="display: block; width: 100%; height: min(80vh, 1000px); border: none;"
+          >
+          </iframe>
         </div>
-      </div>
+
+        <!-- OPTIONAL FALLBACK LINK -->
+        <div style="text-align: center; margin-top: 20px;">
+          <a
+            href="discovery-project-presentation.pdf"
+            target="_blank"
+            style="text-decoration: none; color: #0070f3; font-weight: 500;">
+            Open PDF presentation in new tab
+          </a>
+        </div>
+
+      </section>
     </main>
   </body>
 </html>
