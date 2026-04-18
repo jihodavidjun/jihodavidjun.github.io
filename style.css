@@ -436,19 +436,346 @@ main {
   color: #b6c6ff;
 }
 
+.discovery-main {
+  padding-top: 2rem;
+}
+
+.discovery-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(300px, 0.9fr);
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.discovery-copy {
+  min-height: 100%;
+}
+
+.discovery-copy h1 {
+  max-width: 11ch;
+}
+
+.discovery-intro {
+  max-width: 62ch;
+}
+
+.discovery-panel,
+.sidebar-card,
+.discovery-card,
+.skill-detail-card,
+.snapshot-card,
+.timeline-shell,
+.meta-chip,
+.visual-placeholder {
+  position: relative;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(18, 25, 44, 0.92), rgba(11, 16, 30, 0.96));
+  box-shadow: var(--shadow);
+}
+
+.discovery-panel,
+.sidebar-card,
+.discovery-card,
+.skill-detail-card,
+.snapshot-card,
+.timeline-shell,
+.meta-chip,
+.visual-placeholder {
+  border-radius: var(--radius-lg);
+}
+
+.discovery-panel::before,
+.sidebar-card::before,
+.discovery-card::before,
+.skill-detail-card::before,
+.snapshot-card::before,
+.timeline-shell::before,
+.meta-chip::before,
+.visual-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), transparent 24%);
+}
+
+.panel-block + .panel-block,
+.sidebar-card + .sidebar-card {
+  margin-top: 1rem;
+}
+
+.panel-text {
+  margin: 0;
+  color: var(--muted);
+}
+
+.jump-links {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.jump-links a {
+  color: var(--text);
+  padding: 0.8rem 0.95rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  font-size: 0.95rem;
+  transition: border-color 0.18s ease, background 0.18s ease, transform 0.18s ease;
+}
+
+.jump-links a:hover {
+  transform: translateY(-1px);
+  border-color: rgba(139, 92, 246, 0.34);
+  background: rgba(139, 92, 246, 0.08);
+}
+
+.discovery-meta-row {
+  margin-top: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.meta-chip {
+  padding: 1rem 1.05rem;
+}
+
+.meta-chip span {
+  display: block;
+}
+
+.meta-label,
+.card-kicker,
+.snapshot-label,
+.timeline-title,
+.visual-label {
+  color: #b6c6ff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.meta-label {
+  margin-bottom: 0.35rem;
+}
+
+.discovery-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(250px, 0.55fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.discovery-content {
+  min-width: 0;
+}
+
+.discovery-sidebar {
+  position: sticky;
+  top: 104px;
+  display: grid;
+  gap: 1rem;
+}
+
+.sidebar-card {
+  padding: 1.25rem;
+}
+
+.discovery-shell {
+  padding: 2rem;
+}
+
+.discovery-grid,
+.skills-card-grid,
+.snapshot-grid,
+.visual-grid,
+.split-reflection-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.discovery-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.discovery-grid-wide {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.discovery-card,
+.skill-detail-card,
+.snapshot-card {
+  padding: 1.3rem;
+}
+
+.discovery-card p,
+.skill-detail-card p,
+.snapshot-card p,
+.timeline-step p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.discovery-card h3,
+.timeline-step h3 {
+  margin: 0 0 0.55rem;
+  font-size: 1.02rem;
+  color: #ffffff;
+}
+
+.card-kicker {
+  margin: 0 0 0.7rem;
+}
+
+.discovery-card-emphasis {
+  background:
+    radial-gradient(circle at top right, rgba(79, 140, 255, 0.14), transparent 40%),
+    linear-gradient(180deg, rgba(20, 29, 51, 0.96), rgba(11, 16, 30, 0.98));
+}
+
+.visual-placeholder {
+  min-height: 220px;
+  margin-top: 1rem;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background:
+    linear-gradient(180deg, rgba(20, 29, 51, 0.86), rgba(11, 16, 30, 0.92)),
+    repeating-linear-gradient(
+      135deg,
+      rgba(255,255,255,0.03),
+      rgba(255,255,255,0.03) 16px,
+      transparent 16px,
+      transparent 32px
+    );
+}
+
+.visual-placeholder-large {
+  min-height: 300px;
+}
+
+.visual-note {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.timeline-shell {
+  margin-top: 1rem;
+  padding: 1.35rem;
+}
+
+.timeline-title {
+  margin: 0 0 1rem;
+}
+
+.timeline-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.timeline-step {
+  display: grid;
+  grid-template-columns: 62px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.timeline-marker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.18), rgba(79, 140, 255, 0.18));
+  border: 1px solid rgba(139, 92, 246, 0.24);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.visual-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1rem;
+}
+
+.split-reflection-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.reflection-card {
+  min-height: 100%;
+}
+
+.placeholder-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.placeholder-list li + li {
+  margin-top: 0.65rem;
+}
+
+.skills-card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.skill-context {
+  margin-top: 0.9rem !important;
+  color: #e9eeff !important;
+  font-size: 0.93rem;
+}
+
+.snapshot-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.snapshot-label {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.jump-links-stacked a {
+  font-size: 0.92rem;
+}
+
 @media (max-width: 980px) {
   .hero-grid,
+  .discovery-hero-grid,
+  .discovery-layout,
   .two-column,
   .goal-grid,
   .project-grid,
   .skills-grid,
-  .contact-grid {
+  .contact-grid,
+  .discovery-grid,
+  .discovery-grid-wide,
+  .skills-card-grid,
+  .snapshot-grid,
+  .visual-grid,
+  .split-reflection-grid {
     grid-template-columns: 1fr;
   }
 
   .hero-copy h1 {
     max-width: 100%;
     font-size: clamp(2.5rem, 11vw, 4.4rem);
+  }
+
+  .discovery-meta-row {
+    grid-template-columns: 1fr;
+  }
+
+  .discovery-sidebar {
+    position: static;
   }
 }
 
@@ -463,6 +790,19 @@ main {
   .hero-panel,
   .section-shell {
     padding: 1.35rem;
+  }
+
+  .meta-chip,
+  .discovery-card,
+  .skill-detail-card,
+  .snapshot-card,
+  .timeline-shell,
+  .sidebar-card {
+    padding: 1rem;
+  }
+
+  .timeline-step {
+    grid-template-columns: 1fr;
   }
 
   .button {
